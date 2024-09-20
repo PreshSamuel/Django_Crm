@@ -6,7 +6,7 @@
 <h1>Add Record</h1>
 <br>
 
-<form action="{% url '' %}" method="post">
+<form action="{% url 'crm_main_app:update_record' %}" method="post">
     {% csrf_token %}
 
     {{form.as_p}}
